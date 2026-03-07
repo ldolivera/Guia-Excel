@@ -39,11 +39,71 @@
     <section id="topicos">
         <h2>Principais usos do Excel</h2>
         <ul>
-            <li>Análise de Dados</li>
+            <li>Análise de Dados
+                <ul>
+                    <li> Criação de DashBoards</li>
+                    <li>Segmentação de bases de dados</li>
+                </ul>
+            </li>
+                
             <li>Relatórios Financeiros</li>
             <li>Gestão de Projetos</li>
             <li>Automações de Tarefas</li>
         </ul>
+        <h2>Principais Fórmulas do Excel</h2>
+        <ol>
+            <li>=soma()</li>
+            <li>=procv()</li>
+            <li>=somase()</li>
+            <li>=somases()</li>
+            <li>=se()</li>
+        </ol>
+        <h2>Como Usar as Principais Fórmulas</h2>
+        <dl>
+            <dt>Intervalos</dt>
+            <dd>
+                Todas as fórmulas usadas no Excel são equações matemáticas compreendidas entre intervalos de células. Logo, os intervalos fazem 
+                parte da estrutura semântica de toda fórmula, a estrutura dos intervalor é: Letra correspondente à coluna inicial seguida do número da linha inicial: Letra correspondente à coluna final seguida do número da linha final. <br>
+                <strong>Exemplo: A1:B20</strong> <br>
+                Analisando o exemplo acima pode-se entender que o intervalo começa na Coluna A Linha 1 e termina na Coluna B Linha 20.
+            </dd>
+            <dt>Soma</dt>
+            <dd>A fórmula de soma é usada para somar um ou mais intervalos de células. 
+                Vamos tomar como exemplo =Soma(A2:A30), observe que dentro da fórmula está compreendido o intervalo A1:A30, 
+                isso significa que a fórmula está somando todos os valores da Coluna A na lina 2 até a linha 30. <br>
+                <strong>Estrutura da Fórmula: =soma(intervalo)</strong>
+            </dd>
+            <dt>Procv</dt>
+            <dd>
+                A Fórmula Procv significa procurar verticalmente, para usar essa fórmula devemos entender o conceito de "Procurar" significar validar
+                valores compreendidos nas células de um intervalo com um valor ou um valor de uma célula específica. <br>
+                Estrutura da Fórmula: =procv(valor ou célula procurada; intervalo para procurar; <abbr title="Número da coluna que contém os valores que devem ser retornados">número da coluna;</abbr>
+                <abbr title="Significa se a fórmula deve retornar um valor baseado em uma pesquisa exata, indicado pelo 0, ou em uma pesquisa aproximada, indicado pelo 1">tipo de retorno)</abbr> <br>
+                <strong>Exemplo: =procv("Produto 1"; A2:C20; 3; 0) </strong><br>
+                A fórmula do exemplo acima basicamente diz: "Procure o Produto 1 no intervalo de A2 até C2, retornando o valor correspondente exato na coluna 3 do intervalo"
+            </dd>
+            <dt>Somase</dt>
+            <dd>
+                A fórmula Somase soma um intervalo baseado na correspondência lógica desse intervalo com um valor ou célula, isso significa que em um intervalo só serão somadas as células que atendam a uma critério específico. <br>
+                <strong>Estrutura da Fórmula: =somase(intervalo; critério; intervalo da soma)</strong><br>
+                Exemplo: =somase(A2:A10;D5;B2:B10)                
+
+            </dd>
+            <dt>Somases</dt>
+            <dd>
+                A fórmula Somases é uma variação da fórmula Somase, mas analisando mais de um critério. <br>
+                <strong>Estrutura da Fórmula: =somases(intervalo soma; intervalo analisado pelo primeiro critério; primeiro critério; intervalo análisado pelo segundo critério; segundo critério; ...)</strong> <br>
+                Exemplo: =somases(D2:D10; B2:B10; "Loja A"; C2:C10; "João")
+            </dd>
+            <dt>Se</dt>
+            <dd>
+                A fórmula SE serve para verificar uma situação específica e processar outra ação ou exbir um valor quando verdadeiro ou falso. <br>
+                Basicamente a fórmula diz: "Se esse valor for igual a esse; faça determinda ação se verdadeiro; faça determinada ação se falso". <br>
+                Exemplo: =se(A1 = B1; Iguais; Diferentes)
+            </dd>
+        </dl>
     </section>
+
+    <section id="dados"></section>
 </body>
 </html>
