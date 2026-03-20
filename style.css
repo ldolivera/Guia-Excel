@@ -1,0 +1,18 @@
+.fonte {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+    color: rgb(8, 87, 2);
+    background-color: blueviolet;
+}
+h1 {
+    color: rgb(8, 87, 2);
+    padding: 10px;
+}
+.caixa_texto {
+    background-color: rgb(238, 238, 238);
+    height: auto;
+    margin: 25px;
+    padding: 15px;
+    border-radius: 10px;
+}
