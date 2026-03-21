@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guia Excel</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class= "fonte">
     <Header id="topo">
-        <h1>Guia Prático de Excel</h1>
+        <h1 class="titulos">Guia Prático de Excel</h1>
         <nav>
             <ul>
                 <li><a href="#sobre">Sobre</a></li>
@@ -18,8 +19,8 @@
         </nav>
     </Header>
     <section id="sobre">
-        <h2>Sobre o excel</h2>
-        <p>
+        <h2 class="titulos">Sobre o excel</h2>
+        <p class="caixa_texto">
             O Microsoft Excel, mais conhecido por apenas Excel, 
             é um <strong>editor de planilhas</strong> produzido pela Microsoft para computadores.
             Seus recursos incluem uma interface intuitiva e capacitadas ferramentas de cálculo e de construção de tabelas
@@ -27,7 +28,7 @@
             É, com grande vantagem, o aplicativo de planilha electrónica dominante, disponível para essas plataformas e o tem 
             sido desde a versão 5 em 1993 e sua inclusão como parte do Microsoft Office.
         </p>
-        <p>
+        <p class="caixa_texto">
             O Excel oferece possibilidades vastas para gestão de dados, indo de <strong>simples tabelas a análises complexas e automação</strong>. 
            <em> As principais funcionalidades incluem criação de fórmulas/funções (SE, <abbr title="procurar verticalmente">PROCV</abbr>), tabelas dinâmicas para resumos, gráficos interativos, 
             validação de dados para listas suspensas, automação com macros (<abbr title="VIsual Basic for Applications">VBA</abbr>) e cálculos combinatórios</em>, tornando-o essencial para <strong>finanças e relatórios.</strong> 
@@ -37,7 +38,7 @@
         </blockquote>
     </section>
     <section id="topicos">
-        <h2>Principais usos do Excel</h2>
+        <h2 class="titulos">Principais usos do Excel</h2>
         <ul>
             <li>Análise de Dados
                 <ul>
@@ -50,7 +51,7 @@
             <li>Gestão de Projetos</li>
             <li>Automações de Tarefas</li>
         </ul>
-        <h2>Principais Fórmulas do Excel</h2>
+        <h2 class="titulos">Principais Fórmulas do Excel</h2>
         <ol>
             <li>=soma()</li>
             <li>=procv()</li>
@@ -58,23 +59,23 @@
             <li>=somases()</li>
             <li>=se()</li>
         </ol>
-        <h2>Como Usar as Principais Fórmulas</h2>
+        <h2 class="titulos">Como Usar as Principais Fórmulas</h2>
         <dl>
             <dt>Intervalos</dt>
-            <dd>
+            <dd class="caixa_texto">
                 Todas as fórmulas usadas no Excel são equações matemáticas compreendidas entre intervalos de células. Logo, os intervalos fazem 
                 parte da estrutura semântica de toda fórmula, a estrutura dos intervalor é: Letra correspondente à coluna inicial seguida do número da linha inicial: Letra correspondente à coluna final seguida do número da linha final. <br>
                 <strong>Exemplo: A1:B20</strong> <br>
                 Analisando o exemplo acima pode-se entender que o intervalo começa na Coluna A Linha 1 e termina na Coluna B Linha 20.
             </dd>
             <dt>Soma</dt>
-            <dd>A fórmula de soma é usada para somar um ou mais intervalos de células. 
+            <dd class="caixa_texto">A fórmula de soma é usada para somar um ou mais intervalos de células. 
                 Vamos tomar como exemplo =Soma(A2:A30), observe que dentro da fórmula está compreendido o intervalo A1:A30, 
                 isso significa que a fórmula está somando todos os valores da Coluna A na lina 2 até a linha 30. <br>
                 <strong>Estrutura da Fórmula: =soma(intervalo)</strong>
             </dd>
             <dt>Procv</dt>
-            <dd>
+            <dd class="caixa_texto">
                 A Fórmula Procv significa procurar verticalmente, para usar essa fórmula devemos entender o conceito de "Procurar" significar validar
                 valores compreendidos nas células de um intervalo com um valor ou um valor de uma célula específica. <br>
                 Estrutura da Fórmula: =procv(valor ou célula procurada; intervalo para procurar; <abbr title="Número da coluna que contém os valores que devem ser retornados">número da coluna;</abbr>
@@ -83,20 +84,20 @@
                 A fórmula do exemplo acima basicamente diz: "Procure o Produto 1 no intervalo de A2 até C2, retornando o valor correspondente exato na coluna 3 do intervalo"
             </dd>
             <dt>Somase</dt>
-            <dd>
+            <dd class="caixa_texto">
                 A fórmula Somase soma um intervalo baseado na correspondência lógica desse intervalo com um valor ou célula, isso significa que em um intervalo só serão somadas as células que atendam a uma critério específico. <br>
                 <strong>Estrutura da Fórmula: =somase(intervalo; critério; intervalo da soma)</strong><br>
                 Exemplo: =somase(A2:A10;D5;B2:B10)                
 
             </dd>
             <dt>Somases</dt>
-            <dd>
+            <dd class="caixa_texto">
                 A fórmula Somases é uma variação da fórmula Somase, mas analisando mais de um critério. <br>
                 <strong>Estrutura da Fórmula: =somases(intervalo soma; intervalo analisado pelo primeiro critério; primeiro critério; intervalo análisado pelo segundo critério; segundo critério; ...)</strong> <br>
                 Exemplo: =somases(D2:D10; B2:B10; "Loja A"; C2:C10; "João")
             </dd>
             <dt>Se</dt>
-            <dd>
+            <dd class="caixa_texto">
                 A fórmula SE serve para verificar uma situação específica e processar outra ação ou exbir um valor quando verdadeiro ou falso. <br>
                 Basicamente a fórmula diz: "Se esse valor for igual a esse; faça determinda ação se verdadeiro; faça determinada ação se falso". <br>
                 Exemplo: =se(A1 = B1; "Iguais"; "Diferentes")
@@ -105,7 +106,7 @@
     </section>
 
     <section id="dados">
-        <h2>Dados</h2>
+        <h2 class="titulos">Dados</h2>
         <table>
             <caption>Tabela Prática com as fórmulas mais usuais</caption>
             <thead>
@@ -175,7 +176,7 @@
         </table>
     </section>
     <section id="galeria"><!--item 30-->>
-        <h2> Galeria</h2>
+        <h2 class="titulos"> Galeria</h2>
         <figure>
             <figcaption>Espaço de trabalho excel</figcaption>
             <img src="excel.jpg" alt="Tela incial do excel" width="500" height="300">
