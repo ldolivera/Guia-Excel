@@ -29,3 +29,7 @@ th {
     background-color: rgb(88, 165, 82);
     color: white;
 }
+
+dl {
+    font-size: large;
+}
