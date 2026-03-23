@@ -82,3 +82,11 @@ legend {
   color:          var(--cor-principal);
   padding:        0 .5rem;
 }
+button {
+    background-color: rgb(21, 74, 98);
+    color: #f8fafc;
+    height: 2em;
+    width: 6em;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
