@@ -1,0 +1,84 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Cores */
+  --cor-principal: #003366;
+  --cor-destaque:  #FFCC00;
+  --cor-texto:     #1a1a2e;
+  --cor-fundo:     #f8fafc;
+  --cor-superficie:#ffffff;
+  --cor-borda:     #c8d0dc;
+  --cor-erro:      #c62828;
+  --cor-sucesso:   #2e7d32;
+  --cor-muted:     #6b7280;
+
+  /* Tipografia */
+  --fonte: 'Segoe UI', system-ui, sans-serif;
+
+  /* Geometria */
+  --raio: 6px;
+}
+body {
+  font-family: var(--fonte);
+  background:  var(--cor-fundo);
+  color:       var(--cor-texto);
+  min-height:  100dvh;
+  display:     flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.form-card {
+  background:    var(--cor-superficie);
+  width:         100%;
+  max-width:     640px;
+  border-radius: var(--raio);
+  box-shadow: 0 4px 24px rgba(0,51,102,.1);
+  overflow: hidden;
+}
+
+.form-card__header {
+  background:    var(--cor-principal);
+  padding:       1.4rem 1.75rem;
+  border-bottom: 4px solid var(--cor-destaque);
+}
+.form-card__header h1 {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.form-card__header p {
+  color: rgba(255,255,255,.7);
+  font-size: .85rem;
+  margin-top: .25rem;
+}
+
+.form-body {
+  padding: 1.75rem;
+}
+
+fieldset {
+  border:         1px solid var(--cor-borda);
+  border-radius:  var(--raio);
+  padding:        1.1rem 1.25rem;
+  margin-bottom:  1.5rem;
+}
+/* Remove a borda padrão do último
+   fieldset antes dos botões */
+fieldset:last-of-type {
+  margin-bottom: 0;
+}
+
+legend {
+  font-size:      .75rem;
+  font-weight:    700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color:          var(--cor-principal);
+  padding:        0 .5rem;
+}
