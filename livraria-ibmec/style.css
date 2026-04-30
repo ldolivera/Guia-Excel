@@ -37,6 +37,10 @@ body {
 .categorias { background-color: #e8edf2; padding: 20px; }
 .rodape { background-color: #1A1A2E; color: #ccc; padding: 16px; }
 
+.categorias .card:first-child{
+    grid-column: span 2;
+}
+
 .card-cat {
  background-color: #003366;
  color: #FFCC00;
