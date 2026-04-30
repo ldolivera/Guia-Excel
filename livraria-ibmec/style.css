@@ -50,3 +50,32 @@ body {
  border-radius: 6px;
  font-size: 0.95rem;
 }
+
+
+.topo {
+ /* mantenha o que ja existe e acrescente: */
+ display: grid; /* transforma o topo em um grid interno */
+ place-items: center; /* centraliza em ambos os eixos */
+ text-align: center;
+ min-height: 100px;
+}
+
+.rodape {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 1rem;
+}
+
+destaque {
+ /* mantenha o que ja existe e acrescente: */
+ display: grid;
+ align-items: start; /* vertical: inicio */
+ justify-items: center; /* horizontal: centro */
+}
+.destaque .preco {
+ font-size: 1.5rem;
+ font-weight: bold;
+ color: #FFCC00; /* use a cor amarela do wireframe: #FFCC00 */
+ margin-top: 12px;
+}
