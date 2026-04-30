@@ -23,7 +23,12 @@ body {
 .topo { grid-area: topo; }
 .destaque { grid-area: destaque; }
 .novidades { grid-area: novidades; }
-.categorias { grid-area: categorias; }
+.categorias { 
+    grid-area: categorias;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1.5rem;
+}
 .rodape { grid-area: rodape; }
 
 .topo { background-color: #003366; color: #FFCC00; padding: 20px; }
@@ -31,3 +36,13 @@ body {
 .novidades { background-color: #1565C0; color: #fff; padding: 20px; }
 .categorias { background-color: #e8edf2; padding: 20px; }
 .rodape { background-color: #1A1A2E; color: #ccc; padding: 16px; }
+
+.card-cat {
+ background-color: #003366;
+ color: #FFCC00;
+ font-weight: bold;
+ text-align: center;
+ padding: 24px 12px;
+ border-radius: 6px;
+ font-size: 0.95rem;
+}
